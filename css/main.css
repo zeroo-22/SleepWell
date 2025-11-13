@@ -1,0 +1,348 @@
+/* Merged stylesheet: all project CSS consolidated into main.css
+   Sections are included in the following order (later sections can override earlier ones):
+   1) base/main.css (existing)
+   2) style.css
+   3) about.css
+   4) home.css
+   5) loginsignup.css
+*/
+
+/* =========================
+   1) base/main.css content
+   ========================= */
+body {
+    background-image: url('../assets/Purple Pink Gradient Neon Futuristic Metaverse Presentation.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+.register-link {
+    color : #ffffff;
+}
+
+.register-link a {
+    color : #4e14d4;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000ab;
+    padding: 10px 60px;
+    color: white;
+}
+
+.login-container {
+  display: flex;                   
+  justify-content: right;         
+  align-items: right;             
+  height: 80vh;                    
+}
+
+.login-panel {
+  background: rgba(0, 0, 0, 0.397);
+  backdrop-filter: blur(10px);                
+  padding: 100px 90px;               
+  border-radius: 15px;              
+  width: 450px; 
+  height: 675px;                    
+  text-align: center;               
+}
+
+.login-panel h3 {
+  text-align: left;
+  margin-bottom: 30px;              
+  color: #ffffff;
+  margin-top: 10px;                
+}
+
+.login-panel h2 {
+    text-align: left;
+  margin-bottom: 0px;
+  color: #ffffff;
+  font-size: xx-large;
+}
+
+.input-box {
+  text-align: left;         
+  margin-bottom: 20px;      
+}
+
+
+
+.input-box label {
+  font-size: 14px;
+  color: #555;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;              
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input-box input:focus {
+  border-color: #74b9ff;    
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+}
+
+.log {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    margin-left: 56px;
+    padding-left:60%;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #b892ff;
+}
+
+.login-btn {
+    background-color: #734091;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.login-pannel-btn {
+    width: 100%;
+    height: 40px;
+    background-color: #7053af;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 40px;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.login-pannel-btn:hover {
+    background-color: #c5a3ff;
+}
+
+.login-btn:hover {
+    background-color: #c5a3ff;
+}
+
+.hero {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: white;
+    min-height: 100vh; 
+    padding-bottom: 200px;
+    text-align: center;
+    margin-top: -5%;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size:64px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #e0d7f7;
+    margin-bottom: 25px;
+}
+
+.get-started {
+    background-color: #a161b6;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.get-started:hover {
+    background-color: #d69ce1;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 80px;
+    background: #25122c77;
+    color: white;
+}
+
+.home img {
+    width: 300px;
+    height: auto;
+}
+
+.home-content {
+    max-width: 550px;
+}
+
+.home-content h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #e6dcf7;
+}
+
+.home-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 80px;
+    background: #25122c77;
+    color: white;
+}
+
+.home-2 img {
+    width: 300px;
+    height: auto;
+}
+
+/* =========================
+   2) style.css overrides / additions
+   ========================= */
+/* style.css content (general site styles) */
+/* The following rules will override earlier ones if duplicated */
+body {
+    /* same background but without fixed attachment */
+    background-image: url('../assets/Purple Pink Gradient Neon Futuristic Metaverse Presentation.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 80px 100px;
+    min-height: 70vh;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin-left: 40px;
+}
+
+.hero-content h1 {
+    font-size:64px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero-image img {
+    width: 500px;
+    height: auto;
+}
+
+/* =========================
+   3) about.css overrides
+   ========================= */
+.login-btn {
+    background-color: #7053af; 
+}
+
+
+.hero {
+    padding: 80px 100px;
+    min-height: 80vh;
+}
+
+.hero-image img {
+    width: 500px;
+    height: auto;
+}
+
+/* =========================
+   4) home.css overrides
+   ========================= */
+body {
+    background-attachment: fixed; /* home prefers fixed background */
+}
+
+.hero {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: white;
+    min-height: 100vh; 
+    padding-bottom: 200px;
+    text-align: center;
+    margin-top: -5%;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+/* =========================
+   5) loginsignup.css small additions
+   ========================= */
+/* login/signup uses the same navbar and login button colors as base/main */
+
+/* End merged stylesheet */
