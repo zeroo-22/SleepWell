@@ -1,17 +1,6 @@
-/* Merged stylesheet: all project CSS consolidated into main.css
-   Sections are included in the following order (later sections can override earlier ones):
-   1) base/main.css (existing)
-   2) style.css
-   3) about.css
-   4) home.css
-   5) loginsignup.css
-*/
-
-/* =========================
-   1) base/main.css content
-   ========================= */
 body {
-    background-image: url('../assets/Purple Pink Gradient Neon Futuristic Metaverse Presentation.png');
+    background-image: url('../assets/istockphoto-942618794-612x612.jpg');
+    backdrop-filter: blur(5px);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -28,6 +17,7 @@ body {
 .register-link a {
     color : #4e14d4;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -255,6 +245,110 @@ body {
     height: auto;
 }
 
+.contact-section {
+    background-color: rgb(0, 0, 0);
+    padding : 60px 80px;
+    align-items: center;
+    justify-content: center;
+}
 
+.contact-section h1 {
+    color: white;
+    text-align: left;
+    margin-bottom: 20px;
+}
 
+.input-box-contact {     
+    text-align: left;         
+    margin-bottom: 20px;
+    justify-items: center;
+}
+.input-box-contact label {
+  font-size: 14px;
+  color: #ffffff;
+}
 
+.contact-btn {
+    justify-content: right;
+    width: 20%;
+    height: 40px;
+    background-color: #7053af;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+}
+.contact-section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px 28px;
+    background: rgba(0, 0, 0, 0.788);
+    border-radius: 12px;
+    color: #fff;
+}
+
+.contact-section h1 {
+    margin: 0 0 18px 0;
+    font-size: 36px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.name-row {
+    display: flex;
+    gap: 16px;
+}
+
+.input-box-contact,
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.input-box-contact input,
+.input-box input,
+.input-box textarea {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.03);
+    color: #fff;
+    font-size: 15px;
+}
+
+.input-box textarea {
+    min-height: 220px; 
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.contact-btn {
+    background-color: #7053af;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.input-box label {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.contact-btn:hover {
+    background-color: #c5a3ff;
+}
