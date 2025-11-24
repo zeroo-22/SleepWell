@@ -10,12 +10,35 @@ body {
     font-family: Arial, sans-serif;
     
 }
+
+.landing-content {
+    text-align: center;
+    color: white;
+    padding: 150px 20px;
+}
+
+.landing-content a {
+    height : 150px;
+    width: 250px;
+    display: inline-block;
+    margin: 20px 25px;
+    padding: 12px 25px;
+    background-color: #734091;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s;   
+}
+
+
+
 .register-link {
     color : #ffffff;
 }
 
 .register-link a {
-    color : #4e14d4;
+    color : #d45a14;
 }
 
 .navbar {
